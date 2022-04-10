@@ -1,5 +1,13 @@
 package com.sawyer.facebookclone.entity;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import org.hibernate.annotations.GenericGenerator;
+
+import javax.persistence.*;
+
 @Entity
 @Table(name = "POSTS")
 @Data
