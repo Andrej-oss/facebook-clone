@@ -1,6 +1,5 @@
 import axios from "axios";
 import { useSession } from "next-auth/react";
-import { error } from "next/dist/build/output/log";
 import Image from "next/image";
 import { useRef, useState } from "react";
 import { RiDeleteBin6Line } from "react-icons/ri";
@@ -11,7 +10,7 @@ import { useDispatch } from "react-redux";
 import { addPosts } from "../src/features/postsSlice";
 
 const CreatePost = () => {
-  const FACEBOOK_URL = "";
+  const FACEBOOK_URL = "http://localhost:8080/api/post";
   const { data: session } = useSession();
   const postRef = useRef('');
   const filePostRef = useRef(null);
